@@ -23,6 +23,7 @@
     "test",
     "bin",
     "binary",
+    "command",
     "executable"
   ],
   "dependencies": {

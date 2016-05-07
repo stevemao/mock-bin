@@ -54,6 +54,11 @@ Type: `string`
 The actual code you want to execute.
 
 
+## Related
+
+- [mock-git](https://github.com/stevemao/mock-git) - Mock any git command
+
+
 ## License
 
 MIT © [Steve Mao](https://github.com/stevemao)

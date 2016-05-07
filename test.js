@@ -3,7 +3,7 @@ import shell from 'shelljs';
 import m from './';
 shell.config.silent = true;
 
-test('moch and unmock git', async t => {
+test('mock and unmock git', async t => {
 	const log = 'mocking git!';
 	const unmock = await m('git', '#!/usr/bin/env node', `console.log('${log}')`);
 	let actual = shell.exec('git').stdout;
