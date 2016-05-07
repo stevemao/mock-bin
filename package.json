@@ -1,6 +1,6 @@
 {
   "name": "mock-bin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Mock any executable binary",
   "license": "MIT",
   "repository": "stevemao/mock-bin",
