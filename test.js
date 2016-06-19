@@ -1,6 +1,7 @@
 import test from 'ava';
 import shell from 'shelljs';
 import m from './';
+
 shell.config.silent = true;
 
 test('mock and unmock git', async t => {
