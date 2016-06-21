@@ -13,7 +13,8 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "test-win": "xo && ava --serial"
   },
   "files": [
     "index.js"
@@ -27,6 +28,9 @@
     "executable"
   ],
   "dependencies": {
+    "cmd-shim": "^2.0.2",
+    "pify": "^2.3.0",
+    "pinkie-promise": "^2.0.1",
     "shebang-regex": "^2.0.0",
     "shelljs": "^0.7.0",
     "temp-write": "^2.1.0"
