@@ -31,7 +31,7 @@ t.not(log + '\n', actual);
 
 ### mockBin(bin, shebang, code)
 
-Returns a promise which resolves with an unmock function.
+Returns a promise which resolves with an `unmock()` function.
 
 #### bin
 
