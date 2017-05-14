@@ -30,7 +30,6 @@
   "dependencies": {
     "cmd-shim": "^2.0.2",
     "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.1",
     "shebang-regex": "^2.0.0",
     "shelljs": "^0.7.0",
     "temp-write": "^3.3.0"

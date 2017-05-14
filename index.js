@@ -3,7 +3,6 @@ const shell = require('shelljs');
 const tempWrite = require('temp-write');
 const shebangRegex = require('shebang-regex');
 const cmdShim = require('cmd-shim');
-const Promise = require('pinkie-promise');
 const pify = require('pify');
 
 module.exports = (bin, shebang, code) => {
@@ -26,7 +25,7 @@ module.exports = (bin, shebang, code) => {
 
 			if (process.platform === 'win32') {
 				// On windows shebangs aren't supported, add cmd shim
-				return pify(cmdShim, Promise)(filepath, filepath.replace(new RegExp('\\.x-mock-bin$'), ''));
+				return pify(cmdShim)(filepath, filepath.replace(new RegExp('\\.x-mock-bin$'), ''));
 			}
 		})
 		.then(() => () => {

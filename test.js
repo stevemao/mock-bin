@@ -15,6 +15,12 @@ test('mock and unmock git', async t => {
 	t.not(log + '\n', actual);
 });
 
+test('exit code', async t => {
+	await m('git', '#!/usr/bin/env node', 'process.exitCode = 1');
+	const actual = shell.exec('git').code;
+	t.is(1, actual);
+});
+
 test('environment', async t => {
 	const log = 'mocking git!';
 	await m('git', 'node', `console.log('${log}')`);
